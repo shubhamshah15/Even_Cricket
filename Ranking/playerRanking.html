@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<title>Even Cricket</title>
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<link rel="shortcut icon" type="image/x-icon" href="../assets/img/ec1-removebg-preview.png" />
+	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+	<!-- Place favicon.ico in the root directory -->
+
+	<!-- ========================= CSS here ========================= -->
+	<link rel="stylesheet" href="../assets/css/bootstrap-5.0.0-beta1.min.css" />
+	<link rel="stylesheet" href="../assets/css/LineIcons.2.0.css" />
+	<link rel="stylesheet" href="../assets/css/animate.css" />
+	<link rel="stylesheet" href="../assets/css/tiny-slider.css" />
+	<link rel="stylesheet" href="../assets/css/glightbox.min.css" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<link rel="stylesheet" href="../assets/css/style.css" />
+	<link rel="stylesheet" href="../assets/css/news.css" />
+	<link rel="stylesheet" href="../assets/css/faq.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+
+<body>
+	<!-- ========================= preloader Navbar start ========================= -->
+	<div id="navbar"></div>
+	<!-- ========================= preloader Navbar end ========================= -->
+
+	<!-- ========================= Spacer ========================= -->
+	<div style="height: 150px"></div>
+	<!-- ========================= Spacer ========================= -->
+
+	<style>
+		.table {
+			vertical-align: middle !important;
+		}
+
+		.player-name,
+		.nation-name,
+		.rating h2 {
+			color: black;
+		}
+
+		.player-name:hover {
+			text-decoration: none;
+		}
+
+		.player-card {
+			padding: 15px;
+			border-radius: 50px;
+		}
+
+		.player-name {
+			margin: 5px;
+		}
+
+		.nation .flag img {
+			height: 30px;
+			width: 45px;
+			margin: auto;
+		}
+
+		.player-img {
+			height: 7rem;
+			margin: auto;
+		}
+
+		.first-player {
+			background-color: #2a2a72;
+			background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+		}
+
+		.first-player-SA {
+			background-color: #2ea823;
+			background-image: linear-gradient(315deg, #045c01 0%, #3cff00 74%);
+		}
+
+		.first-player-AFG {
+			background-color: #2a2a72;
+			background-image: linear-gradient(315deg, #fd0000 0%, #2a2a72 74%);
+		}
+
+		.first-player .player-name,
+		.first-player .nation-name,
+		.first-player .rating h2 {
+			color: white;
+		}
+
+		@media only screen and (max-width: 768px) {
+			.player-img {
+				height: 80px;
+				width: 100px;
+			}
+		}
+	</style>
+	<div style="padding-left: 50px; margin:0;">
+
+		<style>
+			.mdl-button--accent.mdl-button--accent.mdl-button--raised,
+			.mdl-button--accent.mdl-button--accent.mdl-button--fab {
+				color: rgb(255, 255, 255);
+				background-color: #3399ff;
+			}
+
+			.player-name img {
+				display: none;
+			}
+		</style>
+		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+			onclick="activatebatting()">Batting</button>
+		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+			onclick="activatebowling()">Bowling</button>
+		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+			onclick="activateallrounders()">All rounder
+			</a>
+		</button>
+		<!-- <button class="btn btn-primary" onclick="activatebatting()">Batting</button>
+		<button class="btn btn-primary" onclick="activatebowling()">Bowling</button>
+		<button class="btn btn-primary" onclick="activateallrounders()">
+			All rounder
+		</button> -->
+	</div>
+	<div class="container text-center" id="batting" style="display: block">
+		<h2>T20i Batting Rankings</h2>
+		<hr>
+		<br><br>
+		<table class="table table-borderless">
+			<thead>
+				<tr>
+					<th scope="col">#</th>
+					<!-- <th scope="col"></th> -->
+					<th scope="col">Name</th>
+					<th scope="col">Country</th>
+					<th scope="col">Rating</th>
+				</tr>
+			</thead>
+			<tbody class="players">
+				<!-- Dawid Malan -->
+				<tr class="player-card first-player">
+					<th scope="row">
+						<h5 class="player-name">1</h5>
+					</th>
+					<td>
+						<div>
+							<img class="player-img" src="https://resources.ecb.co.uk/player-photos/odi/480x480/3318.png"
+								alt="" />
+							<h5 class="player-name">Dawid Malan</h5>
+						</div>
+					</td>
+
+					<!-- <td>
+						<h5 class="player-name">Dawid Malan</h5>
+					</td> -->
+					<td class="nation">
+						<div class="flag">
+							<img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Flag_of_England.svg/1920px-Flag_of_England.svg.png"
+								alt="" />
+						</div>
+						<div class="nation-name">ENG</div>
+					</td>
+					<td>
+						<div class="rating">
+							<h2>841</h2>
+						</div>
+					</td>
+				</tr>
+
+				<!-- Babar Azam -->
+				<tr class="player-card">
+					<th scope="row">
+						<h5 class="player-name">2</h5>
+					</th>
+					<td>
+						<div>
+							<img class="player-img" src="https://resources.pulse.icc-cricket.com/players/210/2759.png"
+								alt="" />
+							<h5 class="player-name">Babar Azam</h5>
+						</div>
+						<hr>
+					</td>
+
+					<!-- <td>
+						<h5 class="player-name">Babar Azam</h5>
+
+					</td> -->
+
+					<td class="nation">
+						<div class="flag">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Flag_of_Pakistan.svg/1280px-Flag_of_Pakistan.svg.png"
+								alt="" />
+						</div>
+						<div class="nation-name">PAK</div>
+
+					</td>
+					<td>
+						<div class="rating">
+							<h2>819</h2>
+						</div>
+					</td>
+
+				</tr>
+
+				<!-- Aaron Finch -->
+				<tr class="player-card">
+					<th scope="row">
+						<h5 class="player-name">3</h5>
+					</th>
+					<td>
+						<div>
+							<img class="player-img" src="https://resources.pulse.icc-cricket.com/players/210/167.png"
+								alt="" />
+							<h5 class="player-name">Aaron Finch</h5>
+						</div>
+						<hr>
+					</td>
+
+					<!-- <td>
+						<h5 class="player-name">Aaron Finch</h5>
+					</td> -->
+					<td class="nation">
+						<div class="flag">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/255px-Flag_of_Australia_%28converted%29.svg.png"
+								alt="" />
+						</div>
+						<div class="nation-name">AUS</div>
+					</td>
+					<td>
+						<div class="rating">
+							<h2>733</h2>
+						</div>
+					</td>
+				</tr>
+				<!-- Virat Kohli -->
+				<tr class="player-card">
+					<th scope="row">
+						<h5 class="player-name">4</h5>
+					</th>
+					<td>
+						<div>
+							<img class="player-img" src="https://resources.pulse.icc-cricket.com/players/210/164.png"
+								alt="" />
+							<h5 class="player-name">Virat Kohli</h5>
+
+						</div>
+						<hr>
+					</td>
+
+					<!-- <td>
+						<h5 class="player-name">Virat Kohli</h5>
+					</td> -->
+					<td class="nation">
+						<div class="flag">
+							<img src="https://cdn.britannica.com/97/1597-004-05816F4E/Flag-India.jpg" alt="" />
+						</div>
+						<div class="nation-name">IND</div>
+					</td>
+					<td>
+						<div class="rating">
+							<h2>717</h2>
+						</div>
+					</td>
+				</tr>
+				<!-- Devon Conway -->
+				<tr class="player-card">
+					<th scope="row">
+						<h5 class="player-name">5</h5>
+					</th>
+					<td>
+						<div>
+							<img class="player-img"
+								src="https://www.cricket.com.au/-/media/Players/Men/International/New%20Zealand/Devon-Conway-T202021.ashx"
+								alt="" />
+							<h5 class="player-name">Devon Conway</h5>
+						</div>
+						<hr>
+					</td>
+
+					<!-- <td>
+						<h5 class="player-name">Devon Conway</h5>
+					</td> -->
+					<td class="nation">
+						<div class="flag">
+							<img src="https://cdn.britannica.com/17/3017-004-DCC13F9D/Flag-New-Zealand.jpg" alt="" />
+						</div>
+						<div class="nation-name">NZ</div>
+					</td>
+					<td>
+						<div class="rating">
+							<h2>700</h2>
+						</div>
+					</td>
+				</tr>
+				<!--Lokesh Rahul -->
+				<tr class="player-card">
+					<th scope="row">
+						<h5 class="player-name">6</h5>
+					</th>
+					<td>
+						<div>
+							<img class="player-img" src="https://resources.pulse.icc-cricket.com/players/210/1125.png"
+								alt="" />
+							<h5 class="player-name">Lokesh Rahul</h5>
+						</div>
+						<hr>
+					</td>
+
+					<!-- <td>
+						<h5 class="player-name">Lokesh Rahul</h5>
+					</td> -->
+					<td class="nation">
+						<div class="flag">
+							<img src="https://cdn.britannica.com/97/1597-004-05816F4E/Flag-India.jpg" alt="" />
+						</div>
+						<div class="nation-name">IND</div>
+					</td>
+					<td>
+						<div class="rating">
+							<h2>699</h2>
+						</div>
+					</td>
+				</tr>
+				<!--Mohammad Rizwan -->
+				<tr class="player-card">
+					<th scope="row">
+						<h5 class="player-name">7</h5>
+					</th>
+					<td>
+						<div>
+							<img class="player-img" src="https://storage.googleapis.com/cricketimages/Players/NA.png"
+								alt="" />
+							<h5 class="player-name">Mohammad Rizwan</h5>
+						</div>
+						<hr>
+					</td>
+
+					<!-- <td>
+						<h5 class="player-name">Mohammad Rizwan</h5>
+					</td> -->
+					<td class="nation">
+						<div class="flag">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Flag_of_Pakistan.svg/1280px-Flag_of_Pakistan.svg.png"
+								alt="" />
+						</div>
+						<div class="nation-name">PAK</div>
+					</td>
+					<td>
+						<div class="rating">
+							<h2>692</h2>
+						</div>
+					</td>
+				</tr>
+				<!--Quinton de Kock -->
+				<tr class="player-card">
+					<th scope="row">
+						<h5 class="player-name">8</h5>
+					</th>
+					<td>
+						<div>
+							<img class="player-img" src="https://resources.pulse.icc-cricket.com/players/210/834.png"
+								alt="" />
+							<h5 class="player-name">Quinton de Kock</h5>
+						</div>
+						<hr>
+					</td>
+
+					<!-- <td>
+						<h5 class="player-name">Quinton de Kock</h5>
+					</td> -->
+					<td class="nation">
+						<div class="flag">
+							<img src="https://cdn.britannica.com/27/4227-004-32423B42/Flag-South-Africa.jpg" alt="" />
+						</div>
+						<div class="nation-name">SA</div>
+					</td>
+					<td>
+						<div class="rating">
+							<h2>671</h2>
+						</div>
+					</td>
+				</tr>
+				<!--Evin Lewis -->
+				<tr class="player-card">
+					<th scope="row">
+						<h5 class="player-name">9</h5>
+					</th>
+					<td>
+						<div>
+							<img class="player-img" src="https://resources.pulse.icc-cricket.com/players/210/872.png"
+								alt="" />
+							<h5 class="player-name">Evin Lewis</h5>
+						</div>
+						<hr>
+					</td>
+
+					<!-- <td>
+						<h5 class="player-name">Evin Lewis</h5>
+					</td> -->
+					<td class="nation">
+						<div class="flag">
+							<img src="https://upload.wikimedia.org/wikipedia/en/6/65/West_indies_cricket_board_flag.png"
+								alt="" />
+						</div>
+						<div class="nation-name">WI</div>
+					</td>
+					<td>
+						<div class="rating">
+							<h2>664</h2>
+						</div>
+					</td>
+				</tr>
+				<!-- Hazratullah -->
+				<tr class="player-card">
+					<th scope="row">
+						<h5 class="player-name">10</h5>
+					</th>
+					<td>
+						<div>
+							<img class="player-img" src="https://resources.pulse.icc-cricket.com/players/210/5134.png"
+								alt="" />
+							<h5 class="player-name">Hazratullah</h5>
+						</div>
+						<hr>
+					</td>
+
+					<!-- <td>
+						<h5 class="player-name">Hazratullah</h5>
+					</td> -->
+					<td class="nation">
+						<div class="flag">
+							<img src="https://cdn.britannica.com/40/5340-004-B25ED5CF/Flag-Afghanistan.jpg" alt="" />
+						</div>
+						<div class="nation-name">AFG</div>
+					</td>
+					<td>
+						<div class="rating">
+							<h2>636</h2>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="container text-center" id="bowling" style="display: none">
+		<h2>T20i Bowling Rankings</h2>
+		<hr>
+		<table class="table table-borderless">
+			<thead>
+				<tr>
+					<th scope="col">#</th>
+					<!-- <th scope="col"></th> -->
+					<th scope="col">Name</th>
+					<th scope="col">Country</th>
+					<th scope="col">Rating</th>
+				</tr>
+			</thead>
+			<tbody class="players">
+				<!-- Tabraiz Shamsi -->
+				<tr class="player-card first-player-SA">
+					<th scope="row">
+						<h5 class="player-name">1</h5>
+					</th>
+					<td>
+						<div>
+							<img class="player-img" src="https://resources.pulse.icc-cricket.com/players/210/3309.png"
+								alt="" />
+							<h5 class="player-name">Tabraiz Shamsi</h5>
+						</div>
+					</td>
+
+					<!-- <td>
+						<h5 class="player-name">Tabraiz Shamsi</h5>
+					</td> -->
+					<td class="nation">
+						<div class="flag">
+							<img src="https://cdn.britannica.com/27/4227-004-32423B42/Flag-South-Africa.jpg" alt="" />
+						</div>
+						<div class="nation-name">SA</div>
+					</td>
+					<td>
+						<div class="rating">
+							<h2>775</h2>
+						</div>
+					</td>
+				</tr>
+				<!-- Wanindu De Silva -->
+				<tr class="player-card">
+					<th scope="row">
+						<h5 class="player-name">2</h5>
+					</th>
+					<td>
+						<div>
+							<img class="player-img"
+								src="https://resources.pulse.icc-cricket.com/players/champions-trophy-2017/100x115/1295.png"
+								alt="" />
+							<h5 class="player-name">Wanindu De Silva</h5>
+						</div>
+						<hr>
+					</td>
+
+					<!-- <td>
+						<h5 class="player-name">Wanindu De Silva</h5>
+					</td> -->
+					<td class="nation">
+						<div class="flag">
+							<img src="https://cdn.britannica.com/13/4413-004-3277D2EF/Flag-Sri-Lanka.jpg" alt="" />
+						</div>
+						<div class="nation-name">SL</div>
+					</td>
+					<td>
+						<div class="rating">
+							<h2>747</h2>
+						</div>
+					</td>
+				</tr>
+				<!-- Rashid Khan -->
+				<tr class="player-card">
+					<th scope="row">
+						<h5 class="player-name">3</h5>
+					</th>
+					<td>
+						<div>
+							<img class="player-img" src="https://resources.pulse.icc-cricket.com/players/210/2885.png"
+								alt="" />
+							<h5 class="player-name">Rashid Khan</h5>
+						</div>
+						<hr>
+					</td>
+
+					<!-- <td>
+						<h5 class="player-name">Rashid Khan</h5>
+					</td> -->
+					<td class="nation">
+						<div class="flag">
+							<img src="https://cdn.britannica.com/40/5340-004-B25ED5CF/Flag-Afghanistan.jpg" alt="" />
+						</div>
+						<div class="nation-name">AFG</div>
+					</td>
+					<td>
+						<div class="rating">
+							<h2>719</h2>
+						</div>
+					</td>
+				</tr>
+				<!-- Adil Rashid -->
+				<tr class="player-card">
+					<th scope="row">
+						<h5 class="player-name">4</h5>
+					</th>
+					<td>
+						<div>
+							<img class="player-img" src="https://resources.pulse.icc-cricket.com/players/210/796.png"
+								alt="" />
+							<h5 class="player-name">Adil Rashid</h5>
+						</div>
+						<hr>
+					</td>
+
+					<!-- <td>
+						<h5 class="player-name">Adil Rashid</h5>
+					</td> -->
+					<td class="nation">
+						<div class="flag">
+							<img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Flag_of_England.svg/1920px-Flag_of_England.svg.png"
+								alt="" />
+						</div>
+						<div class="nation-name">ENG</div>
+					</td>
+					<td>
+						<div class="rating">
+							<h2>689</h2>
+						</div>
+					</td>
+				</tr>
+				<!-- Mujeeb Ur Rahman -->
+				<tr class="player-card">
+					<th scope="row">
+						<h5 class="player-name">5</h5>
+					</th>
+					<td>
+						<div>
+							<img class="player-img" src="https://resources.pulse.icc-cricket.com/players/210/4572.png"
+								alt="" />
+							<h5 class="player-name">Mujeeb Ur Rahman</h5>
+						</div>
+						<hr>
+					</td>
+
+					<!-- <td>
+						<h5 class="player-name">Mujeeb Ur Rahman</h5>
+					</td> -->
+					<td class="nation">
+						<div class="flag">
+							<img src="https://cdn.britannica.com/40/5340-004-B25ED5CF/Flag-Afghanistan.jpg" alt="" />
+						</div>
+						<div class="nation-name">AFG</div>
+					</td>
+					<td>
+						<div class="rating">
+							<h2>687</h2>
+						</div>
+					</td>
+				</tr>
+				<!-- Ashton Agar -->
+				<tr class="player-card">
+					<th scope="row">
+						<h5 class="player-name">6</h5>
+					</th>
+					<td>
+						<div>
+							<img class="player-img" src="https://resources.pulse.icc-cricket.com/players/210/935.png"
+								alt="" />
+							<h5 class="player-name">Ashton Agar</h5>
+						</div>
+						<hr>
+					</td>
+
+					<!-- <td>
+						<h5 class="player-name">Ashton Agar</h5>
+					</td> -->
+					<td class="nation">
+						<div class="flag">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/255px-Flag_of_Australia_%28converted%29.svg.png"
+								alt="" />
+						</div>
+						<div class="nation-name">AUS</div>
+					</td>
+					<td>
+						<div class="rating">
+							<h2>649</h2>
+						</div>
+					</td>
+				</tr>
+				<!--Adam Zampa-->
+				<tr class="player-card">
+					<th scope="row">
+						<h5 class="player-name">7</h5>
+					</th>
+					<td>
+						<div>
+							<img class="player-img" src="https://resources.pulse.icc-cricket.com/players/210/958.png"
+								alt="" />
+							<h5 class="player-name">Adam Zampa</h5>
+						</div>
+						<hr>
+					</td>
+
+					<!-- <td>
+						<h5 class="player-name">Adam Zampa</h5>
+					</td> -->
+					<td class="nation">
+						<div class="flag">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/255px-Flag_of_Australia_%28converted%29.svg.png"
+								alt="" />
+						</div>
+						<div class="nation-name">AUS</div>
+					</td>
+					<td>
+						<div class="rating">
+							<h2>692</h2>
+						</div>
+					</td>
+				</tr>
+				<!--Mustafizur Rahman  -->
+				<tr class="player-card">
+					<th scope="row">
+						<h5 class="player-name">8</h5>
+					</th>
+					<td>
+						<div>
+							<img class="player-img" src="https://resources.pulse.icc-cricket.com/players/210/1594.png"
+								alt="" />
+							<h5 class="player-name">Mustafizur Rahman</h5>
+						</div>
+						<hr>
+					</td>
+
+					<!-- <td>
+						<h5 class="player-name">Mustafizur Rahman</h5>
+					</td> -->
+					<td class="nation">
+						<div class="flag">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/1200px-Flag_of_Bangladesh.svg.png"
+								alt="" />
+						</div>
+						<div class="nation-name">BAN</div>
+					</td>
+					<td>
+						<div class="rating">
+							<h2>626</h2>
+						</div>
+					</td>
+				</tr>
+				<!-- Shakib Al Hasan -->
+				<tr class="player-card">
+					<th scope="row">
+						<h5 class="player-name">9</h5>
+					</th>
+					<td>
+						<div>
+							<img class="player-img" src="https://resources.pulse.icc-cricket.com/players/210/201.png"
+								alt="" />
+							<h5 class="player-name">Shakib Al Hasan</h5>
+						</div>
+						<hr>
+					</td>
+
+					<!-- <td>
+						<h5 class="player-name">Shakib Al Hasan</h5>
+					</td> -->
+					<td class="nation">
+						<div class="flag">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/1200px-Flag_of_Bangladesh.svg.png"
+								alt="" />
+						</div>
+						<div class="nation-name">BAN</div>
+					</td>
+					<td>
+						<div class="rating">
+							<h2>611</h2>
+						</div>
+					</td>
+				</tr>
+				<!-- Tim Southee -->
+				<tr class="player-card">
+					<th scope="row">
+						<h5 class="player-name">10</h5>
+					</th>
+					<td>
+						<div>
+							<img class="player-img" src="https://resources.pulse.icc-cricket.com/players/210/307.png"
+								alt="" />
+							<h5 class="player-name">Tim Southee</h5>
+						</div>
+						<hr>
+					</td>
+
+					<!-- <td>
+						<h5 class="player-name">Tim Southee</h5>
+					</td> -->
+					<td class="nation">
+						<div class="flag">
+							<img src="https://cdn.britannica.com/17/3017-004-DCC13F9D/Flag-New-Zealand.jpg" alt="" />
+						</div>
+						<div class="nation-name">NZ</div>
+					</td>
+					<td>
+						<div class="rating">
+							<h2>605</h2>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="container text-center" id="allrounders" style="display: none">
+		<h2>T20i All rounder Rankings</h2>
+		<hr>
+		<table class="table table-borderless">
+			<thead>
+				<tr>
+					<th scope="col">#</th>
+					<!-- <th scope="col"></th> -->
+					<th scope="col">Name</th>
+					<th scope="col">Country</th>
+					<th scope="col">Rating</th>
+				</tr>
+			</thead>
+			<tbody class="players">
+				<!-- Mohammad Nabi -->
+				<tr class="player-card first-player-AFG">
+					<th scope="row">
+						<h5 class="player-name">1</h5>
+					</th>
+					<td>
+						<div>
+							<img class="player-img"
+								src="https://resources.pulse.icc-cricket.com/players/130x150/618.png" alt="" />
+							<h5 class="player-name">Mohammad Nabi</h5>
+						</div>
+					</td>
+
+					<!-- <td>
+						<h5 class="player-name">Mohammad Nabi</h5>
+					</td> -->
+					<td class="nation">
+						<div class="flag">
+							<img src="https://cdn.britannica.com/40/5340-004-B25ED5CF/Flag-Afghanistan.jpg" alt="" />
+						</div>
+						<div class="nation-name">AFG</div>
+					</td>
+					<td>
+						<div class="rating">
+							<h2>285</h2>
+						</div>
+					</td>
+				</tr>
+				<!-- Shakib Al Hasan -->
+				<tr class="player-card">
+					<th scope="row">
+						<h5 class="player-name">2</h5>
+					</th>
+					<td>
+						<div>
+							<img class="player-img" src="https://resources.pulse.icc-cricket.com/players/210/201.png"
+								alt="" />
+							<h5 class="player-name">Shakib Al Hasan</h5>
+						</div>
+						<hr>
+					</td>
+
+					<!-- <td>
+						<h5 class="player-name">Shakib Al Hasan</h5>
+					</td> -->
+					<td class="nation">
+						<div class="nation">
+							<div class="flag">
+								<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/1200px-Flag_of_Bangladesh.svg.png"
+									alt="" />
+							</div>
+							<div class="nation-name">BAN</div>
+						</div>
+					</td>
+					<td>
+						<div class="rating">
+							<h2>275</h2>
+						</div>
+					</td>
+				</tr>
+				<!-- Richard Berrington -->
+				<tr class="player-card">
+					<th scope="row">
+						<h5 class="player-name">3</h5>
+					</th>
+					<td>
+						<div>
+							<img class="player-img" src="https://www.espncricinfo.com/db/PICTURES/CMS/316500/316587.png"
+								alt="" />
+							<h5 class="player-name">Richard Berrington</h5>
+							<hr>
+						</div>
+					</td>
+
+					<!-- <td>
+						<h5 class="player-name">Richard Berrington</h5>
+					</td> -->
+					<td class="nation">
+						<div class="flag">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_Scotland.svg"
+								alt="" />
+
+						</div>
+						<div class="nation-name">SCO</div>
+					</td>
+					<td>
+						<div class="rating">
+							<h2>184</h2>
+						</div>
+					</td>
+				</tr>
+				<!-- Khawar Ali -->
+				<tr class="player-card">
+					<th scope="row">
+						<h5 class="player-name">4</h5>
+					</th>
+					<td>
+						<div>
+							<img class="player-img" src="https://resources.pulse.icc-cricket.com/players/210/2828.png"
+								alt="" />
+							<h5 class="player-name">Khawar Ali</h5>
+						</div>
+						<hr>
+					</td>
+
+					<!-- <td>
+						<h5 class="player-name">Khawar Ali</h5>
+					</td> -->
+					<td class="nation">
+						<div class="flag">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flag_of_Oman.svg/1024px-Flag_of_Oman.svg.png"
+								alt="" />
+						</div>
+						<div class="nation-name">OMA</div>
+					</td>
+					<td>
+						<div class="rating">
+							<h2>159</h2>
+						</div>
+					</td>
+				</tr>
+				<!--	Rohan Mustafa -->
+				<tr class="player-card">
+					<th scope="row">
+						<h5 class="player-name">5</h5>
+					</th>
+					<td>
+						<div>
+							<img class="player-img" src="https://resources.pulse.icc-cricket.com/players/210/1215.png"
+								alt="" />
+							<h5 class="player-name">Rohan Mustafa</h5>
+						</div>
+						<hr>
+					</td>
+
+					<!-- <td>
+						<h5 class="player-name">Rohan Mustafa</h5>
+					</td> -->
+					<td class="nation">
+						<div class="flag">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_United_Arab_Emirates.svg/1920px-Flag_of_the_United_Arab_Emirates.svg.png"
+								alt="" />
+						</div>
+						<div class="nation-name">UAE</div>
+					</td>
+					<td>
+						<div class="rating">
+							<h2>152</h2>
+						</div>
+					</td>
+				</tr>
+				<!-- Glenn Maxwell -->
+				<tr class="player-card">
+					<th scope="row">
+						<h5 class="player-name">6</h5>
+					</th>
+					<td>
+						<div>
+							<img class="player-img" src="https://resources.pulse.icc-cricket.com/players/210/282.png"
+								alt="" />
+							<h5 class="player-name">Glenn Maxwell</h5>
+						</div>
+						<hr>
+					</td>
+
+					<!-- <td>
+						<h5 class="player-name">Glenn Maxwell</h5>
+					</td> -->
+					<td class="nation">
+						<div class="flag">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/255px-Flag_of_Australia_%28converted%29.svg.png"
+								alt="" />
+						</div>
+						<div class="nation-name">AUS</div>
+					</td>
+					<td>
+						<div class="rating">
+							<h2>151</h2>
+						</div>
+					</td>
+				</tr>
+				<!-- Mitchell Marsh -->
+				<tr class="player-card">
+					<th scope="row">
+						<h5 class="player-name">7</h5>
+					</th>
+					<td>
+						<div>
+							<img class="player-img" src="https://resources.pulse.icc-cricket.com/players/210/221.png"
+								alt="" />
+							<h5 class="player-name">Mitchell Marsh</h5>
+						</div>
+						<hr>
+					</td>
+
+					<!-- <td>
+						<h5 class="player-name">Mitchell Marsh</h5>
+					</td> -->
+					<td class="nation">
+						<div class="flag">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/255px-Flag_of_Australia_%28converted%29.svg.png"
+								alt="" />
+						</div>
+						<div class="nation-name">AUS</div>
+					</td>
+					<td>
+						<div class="rating">
+							<h2>141</h2>
+						</div>
+					</td>
+				</tr>
+				<!-- Zeeshan Maqsood -->
+				<tr class="player-card">
+					<th scope="row">
+						<h5 class="player-name">8</h5>
+					</th>
+					<td>
+						<div>
+							<img class="player-img" src="https://resources.pulse.icc-cricket.com/players/210/2837.png"
+								alt="" />
+							<h5 class="player-name">Zeeshan Maqsood</h5>
+						</div>
+						<hr>
+					</td>
+
+					<!-- <td>
+						<h5 class="player-name">Zeeshan Maqsood</h5>
+					</td> -->
+					<td class="nation">
+						<div class="flag">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flag_of_Oman.svg/1024px-Flag_of_Oman.svg.png"
+								alt="" />
+						</div>
+						<div class="nation-name">OMA</div>
+					</td>
+					<td>
+						<div class="rating">
+							<h2>135</h2>
+						</div>
+					</td>
+				</tr>
+				<!-- Sean Williams -->
+				<tr class="player-card">
+					<th scope="row">
+						<h5 class="player-name">9</h5>
+					</th>
+					<td>
+						<div>
+							<img class="player-img" src="https://resources.pulse.icc-cricket.com/players/210/1102.png"
+								alt="" />
+							<h5 class="player-name">Sean Williams</h5>
+						</div>
+						<hr>
+					</td>
+
+					<!-- <td>
+						<h5 class="player-name">Sean Williams</h5>
+					</td> -->
+					<td class="nation">
+						<div class="flag">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Flag_of_Zimbabwe.svg/800px-Flag_of_Zimbabwe.svg.png"
+								alt="" />
+						</div>
+						<div class="nation-name">ZIM</div>
+					</td>
+					<td>
+						<div class="rating">
+							<h2>132</h2>
+						</div>
+					</td>
+				</tr>
+				<!-- Ryan Burl -->
+				<tr class="player-card">
+					<th scope="row">
+						<h5 class="player-name">10</h5>
+					</th>
+					<td>
+						<div>
+							<img class="player-img" src="https://storage.googleapis.com/cricketimages/Players/N8.png"
+								alt="" />
+							<h5 class="player-name">Ryan Burl</h5>
+						</div>
+						<hr>
+					</td>
+
+					<!-- <td>
+						<h5 class="player-name">Ryan Burl</h5>
+					</td> -->
+					<td class="nation">
+						<div class="flag">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Flag_of_Zimbabwe.svg/800px-Flag_of_Zimbabwe.svg.png"
+								alt="" />
+						</div>
+						<div class="nation-name">ZIM</div>
+					</td>
+					<td>
+						<div class="rating">
+							<h2>131</h2>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<!-- Footer -->
+	<div id="footer"></div>
+
+	<style>
+		.footer {
+			font-family: "Poppins", sans-serif;
+		}
+	</style>
+	<script>
+		var batting = document.getElementById("batting");
+		var bowling = document.getElementById("bowling");
+		var allrounders = document.getElementById("allrounders");
+
+		function activatebatting() {
+			if (bowling.style.display === "block") {
+				bowling.style.display = "none";
+			}
+			if (allrounders.style.display === "block") {
+				allrounders.style.display = "none";
+			}
+			batting.style.display = "block";
+		}
+
+		function activatebowling() {
+			if (batting.style.display === "block") {
+				batting.style.display = "none";
+			}
+			if (allrounders.style.display === "block") {
+				allrounders.style.display = "none";
+			}
+			bowling.style.display = "block";
+		}
+
+		function activateallrounders() {
+			if (bowling.style.display === "block") {
+				bowling.style.display = "none";
+			}
+			if (batting.style.display === "block") {
+				batting.style.display = "none";
+			}
+			allrounders.style.display = "block";
+		}
+	</script>
+
+	<!-- ========================= scroll-top ========================= -->
+	<a href="#" class="scroll-top">
+		<i class="lni lni-arrow-up"></i>
+	</a>
+
+	<!-- ========================= JS here ========================= -->
+	<script src="../assets/js/bootstrap.bundle-5.0.0-beta1.min.js"></script>
+	<script src="../assets/js/contact-form.js"></script>
+	<script src="../assets/js/count-up.min.js"></script>
+	<script src="../assets/js/tiny-slider.js"></script>
+	<script src="../assets/js/isotope.min.js"></script>
+	<script src="../assets/js/glightbox.min.js"></script>
+	<script src="../assets/js/wow.min.js"></script>
+	<script src="../assets/js/imagesloaded.min.js"></script>
+	<script src="../assets/js/main.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#navbar").load("../navbar.html");
+			$("#footer").load("../footer.html");
+		});
+	</script>
+</body>
+
+</html>

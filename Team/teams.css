@@ -1,0 +1,757 @@
+.team-list__block:focus .team-list__image {
+  transform: scale(1.1);
+}
+.team-list__block:focus.t-AUS .team-list__btn {
+  border: none;
+  color: #fff;
+  background-color: #b7942f;
+}
+.team-list__block:focus.t-BAN .team-list__btn {
+  border: none;
+  color: #fff;
+  background-color: #00514c;
+}
+.team-list__block:focus.t-ENG .team-list__btn {
+  border: none;
+  color: #fff;
+  background-color: #24386e;
+}
+.team-list__block:focus.t-IND .team-list__btn {
+  border: none;
+  color: #fff;
+  background-color: #3884f5;
+}
+.team-list__block:focus.t-NZ .team-list__btn {
+  border: none;
+  color: #fff;
+  background-color: #444;
+}
+.team-list__block:focus.t-PAK .team-list__btn {
+  border: none;
+  color: #fff;
+  background-color: #134d10;
+}
+.team-list__block:focus.t-SA .team-list__btn {
+  border: none;
+  color: #fff;
+  background-color: #264921;
+}
+.team-list__block:focus.t-SL .team-list__btn {
+  border: none;
+  color: #fff;
+  background-color: #18c2fc;
+}
+.team-list__block:focus.t-AFG .team-list__btn {
+  border: none;
+  color: #fff;
+  background-color: #0063ab;
+}
+.team-list__block:focus.t-WI .team-list__btn {
+  border: none;
+  color: #fff;
+  background-color: #37041b;
+}
+.team-list__block:focus.t-IRE .team-list__btn {
+  border: none;
+  color: #fff;
+  background-color: #274312;
+}
+.team-list__block:focus.t-ZIM .team-list__btn {
+  border: none;
+  color: #fff;
+  background-color: #750c13;
+}
+.team-list__block:focus.t-AUSw .team-list__btn,
+.team-list__block:focus.t-ENGw .team-list__btn,
+.team-list__block:focus.t-INDw .team-list__btn,
+.team-list__block:focus.t-NZw .team-list__btn,
+.team-list__block:focus.t-PAKw .team-list__btn,
+.team-list__block:focus.t-SAw .team-list__btn,
+.team-list__block:focus.t-SLw .team-list__btn,
+.team-list__block:focus.t-WIw .team-list__btn {
+  border: none;
+  color: #fff;
+}
+@media (min-width: 64.0625em) {
+  .team-list__block:hover .team-list__image {
+    transform: scale(1.1);
+  }
+  .team-list__block:hover.t-AUS .team-list__btn {
+    border: none;
+    color: #fff;
+    background-color: #b7942f;
+  }
+  .team-list__block:hover.t-BAN .team-list__btn {
+    border: none;
+    color: #fff;
+    background-color: #00514c;
+  }
+  .team-list__block:hover.t-ENG .team-list__btn {
+    border: none;
+    color: #fff;
+    background-color: #24386e;
+  }
+  .team-list__block:hover.t-IND .team-list__btn {
+    border: none;
+    color: #fff;
+    background-color: #3884f5;
+  }
+  .team-list__block:hover.t-NZ .team-list__btn {
+    border: none;
+    color: #fff;
+    background-color: #444;
+  }
+  .team-list__block:hover.t-PAK .team-list__btn {
+    border: none;
+    color: #fff;
+    background-color: #134d10;
+  }
+  .team-list__block:hover.t-SA .team-list__btn {
+    border: none;
+    color: #fff;
+    background-color: #264921;
+  }
+  .team-list__block:hover.t-SL .team-list__btn {
+    border: none;
+    color: #fff;
+    background-color: #18c2fc;
+  }
+  .team-list__block:hover.t-AFG .team-list__btn {
+    border: none;
+    color: #fff;
+    background-color: #0063ab;
+  }
+  .team-list__block:hover.t-WI .team-list__btn {
+    border: none;
+    color: #fff;
+    background-color: #37041b;
+  }
+  .team-list__block:hover.t-IRE .team-list__btn {
+    border: none;
+    color: #fff;
+    background-color: #274312;
+  }
+  .team-list__block:hover.t-ZIM .team-list__btn {
+    border: none;
+    color: #fff;
+    background-color: #750c13;
+  }
+  .team-list__block:hover.t-AUSw .team-list__btn,
+  .team-list__block:hover.t-ENGw .team-list__btn,
+  .team-list__block:hover.t-INDw .team-list__btn,
+  .team-list__block:hover.t-NZw .team-list__btn,
+  .team-list__block:hover.t-PAKw .team-list__btn,
+  .team-list__block:hover.t-SAw .team-list__btn,
+  .team-list__block:hover.t-SLw .team-list__btn,
+  .team-list__block:hover.t-WIw .team-list__btn {
+    border: none;
+    color: #fff;
+  }
+}
+
+.team-list__name {
+  font-size: 1.3rem;
+}
+
+.team-list__block {
+  padding: 1rem;
+  position: relative;
+}
+
+.team-list__link {
+  text-decoration: none;
+  position: relative;
+  display: block;
+  height: 100%;
+}
+
+.team-list__image-container {
+  overflow: hidden;
+  min-height: 21rem;
+  height: 100%;
+  padding-bottom: 10rem;
+}
+.team-list__image {
+  width: 100%;
+  transform: scale(1);
+  transition: transform 0.8s cubic-bezier(0, 0, 0.18, 0.71);
+}
+
+.team-list__content {
+  position: absolute;
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@media (max-width: 31.25em) {
+  .team-list__image-container {
+    display: none;
+  }
+  .team-list__content {
+    position: relative;
+    margin-top: 0;
+    padding-top: 2rem;
+  }
+  .team-list__content.t-AUS {
+    background-color: #fbcd2f;
+  }
+  .team-list__content.t-BAN {
+    background-color: #009f94;
+  }
+  .team-list__content.t-ENG {
+    background-color: #00175e;
+  }
+  .team-list__content.t-IND {
+    background-color: #4483e0;
+  }
+  .team-list__content.t-NZ {
+    background-color: #231f20;
+  }
+  .team-list__content.t-PAK {
+    background-color: #004a0f;
+  }
+  .team-list__content.t-SA {
+    background-color: #468f3e;
+  }
+  .team-list__content.t-SL {
+    background-color: #00acd7;
+  }
+  .team-list__content.t-AFG {
+    background-color: #2e8ffd;
+  }
+  .team-list__content.t-WI {
+    background-color: #7e1041;
+  }
+  .team-list__content.t-IRE {
+    background-color: #42701e;
+  }
+  .team-list__content.t-ZIM {
+    background-color: #c41019;
+  }
+  .team-list__name {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  .team-list__gradient {
+    display: none;
+  }
+  .team-list__content {
+    height: 100%;
+  }
+  .team-list__btn {
+    margin-top: auto;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.team-list__logo {
+  z-index: 10;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.badge-70 {
+  background: url(../i/sprites/badges-70-sprite.png) no-repeat;
+  width: 70px;
+  height: 70px;
+  display: block;
+  background-position: -210px -700px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .badge-70 {
+    background-image: url(../i/sprites/badges-70-sprite@x2.png);
+    background-size: 770px 770px;
+  }
+}
+.badge-70.AFG {
+  background-position: -70px 0;
+}
+.badge-70.ARG {
+  background-position: -70px -490px;
+}
+.badge-70.AUS {
+  background-position: 0 -70px;
+}
+.badge-70.AUSw {
+  background-position: -70px -70px;
+}
+.badge-70.AUT {
+  background-position: -140px 0;
+}
+.badge-70.BAH {
+  background-position: -140px -70px;
+}
+.badge-70.BAN {
+  background-position: 0 -140px;
+}
+.badge-70.BEL {
+  background-position: -70px -140px;
+}
+.badge-70.BHU {
+  background-position: -140px -140px;
+}
+.badge-70.BIZ {
+  background-position: -210px 0;
+}
+.badge-70.BOT {
+  background-position: -210px -70px;
+}
+.badge-70.BRA {
+  background-position: -210px -140px;
+}
+.badge-70.BRM {
+  background-position: 0 -210px;
+}
+.badge-70.BRN {
+  background-position: -70px -210px;
+}
+.badge-70.BUL {
+  background-position: -140px -210px;
+}
+.badge-70.CAN {
+  background-position: -210px -210px;
+}
+.badge-70.CAY {
+  background-position: -280px 0;
+}
+.badge-70.CHI {
+  background-position: -280px -70px;
+}
+.badge-70.CHN {
+  background-position: -280px -140px;
+}
+.badge-70.CMR {
+  background-position: -280px -210px;
+}
+.badge-70.COK {
+  background-position: 0 -280px;
+}
+.badge-70.CRC {
+  background-position: -70px -280px;
+}
+.badge-70.CRO {
+  background-position: -140px -280px;
+}
+.badge-70.CYP {
+  background-position: -210px -280px;
+}
+.badge-70.CZE {
+  background-position: -280px -280px;
+}
+.badge-70.DEN {
+  background-position: -350px 0;
+}
+.badge-70.ENG {
+  background-position: -350px -70px;
+}
+.badge-70.ENGw {
+  background-position: -350px -140px;
+}
+.badge-70.ESP {
+  background-position: -350px -210px;
+}
+.badge-70.EST {
+  background-position: -350px -280px;
+}
+.badge-70.FIJ {
+  background-position: 0 -350px;
+}
+.badge-70.FIN {
+  background-position: -70px -350px;
+}
+.badge-70.FKI {
+  background-position: -140px -350px;
+}
+.badge-70.FRA {
+  background-position: -210px -350px;
+}
+.badge-70.GAM {
+  background-position: -280px -350px;
+}
+.badge-70.GER {
+  background-position: -350px -350px;
+}
+.badge-70.GHA {
+  background-position: -420px 0;
+}
+.badge-70.GIB {
+  background-position: -420px -70px;
+}
+.badge-70.GRE {
+  background-position: -420px -140px;
+}
+.badge-70.GSY {
+  background-position: -420px -210px;
+}
+.badge-70.HK {
+  background-position: -420px -280px;
+}
+.badge-70.HUN {
+  background-position: -420px -350px;
+}
+.badge-70.INA {
+  background-position: 0 -420px;
+}
+.badge-70.IND {
+  background-position: -70px -420px;
+}
+.badge-70.INDw {
+  background-position: -140px -420px;
+}
+.badge-70.IOM {
+  background-position: -210px -420px;
+}
+.badge-70.IRE {
+  background-position: -280px -420px;
+}
+.badge-70.IRI {
+  background-position: -350px -420px;
+}
+.badge-70.ISR {
+  background-position: -420px -420px;
+}
+.badge-70.ITA {
+  background-position: -490px 0;
+}
+.badge-70.JPN {
+  background-position: -490px -70px;
+}
+.badge-70.JSY {
+  background-position: -490px -140px;
+}
+.badge-70.KEN {
+  background-position: -490px -210px;
+}
+.badge-70.KUW {
+  background-position: -490px -280px;
+}
+.badge-70.LES {
+  background-position: -490px -350px;
+}
+.badge-70.LUX {
+  background-position: -490px -420px;
+}
+.badge-70.MAS {
+  background-position: 0 -490px;
+}
+.badge-70.MAW {
+  background-position: 0 0;
+}
+.badge-70.MDV {
+  background-position: -140px -490px;
+}
+.badge-70.MEX {
+  background-position: -210px -490px;
+}
+.badge-70.MLI {
+  background-position: -280px -490px;
+}
+.badge-70.MLT {
+  background-position: -350px -490px;
+}
+.badge-70.MOR {
+  background-position: -420px -490px;
+}
+.badge-70.MOZ {
+  background-position: -490px -490px;
+}
+.badge-70.MYA {
+  background-position: -560px 0;
+}
+.badge-70.NAM {
+  background-position: -560px -70px;
+}
+.badge-70.NED {
+  background-position: -560px -140px;
+}
+.badge-70.NEP {
+  background-position: -560px -210px;
+}
+.badge-70.NGR {
+  background-position: -560px -280px;
+}
+.badge-70.NOR {
+  background-position: -560px -350px;
+}
+.badge-70.NZ {
+  background-position: -560px -420px;
+}
+.badge-70.NZw {
+  background-position: -560px -490px;
+}
+.badge-70.OMA {
+  background-position: 0 -560px;
+}
+.badge-70.PAK {
+  background-position: -70px -560px;
+}
+.badge-70.PAKw {
+  background-position: -140px -560px;
+}
+.badge-70.PAN {
+  background-position: -210px -560px;
+}
+.badge-70.PER {
+  background-position: -280px -560px;
+}
+.badge-70.PHI {
+  background-position: -350px -560px;
+}
+.badge-70.PNG {
+  background-position: -420px -560px;
+}
+.badge-70.POR {
+  background-position: -490px -560px;
+}
+.badge-70.QAT {
+  background-position: -560px -560px;
+}
+.badge-70.ROM {
+  background-position: -630px 0;
+}
+.badge-70.RUS {
+  background-position: -630px -70px;
+}
+.badge-70.RWA {
+  background-position: -630px -140px;
+}
+.badge-70.SA {
+  background-position: -630px -210px;
+}
+.badge-70.SAM {
+  background-position: -630px -280px;
+}
+.badge-70.SAw {
+  background-position: -630px -350px;
+}
+.badge-70.SCO {
+  background-position: -630px -420px;
+}
+.badge-70.SDA {
+  background-position: -630px -490px;
+}
+.badge-70.SER {
+  background-position: -630px -560px;
+}
+.badge-70.SEY {
+  background-position: 0 -630px;
+}
+.badge-70.SIN {
+  background-position: -70px -630px;
+}
+.badge-70.SK {
+  background-position: -140px -630px;
+}
+.badge-70.SL {
+  background-position: -210px -630px;
+}
+.badge-70.SLE {
+  background-position: -280px -630px;
+}
+.badge-70.SLO {
+  background-position: -350px -630px;
+}
+.badge-70.SLw {
+  background-position: -420px -630px;
+}
+.badge-70.STH {
+  background-position: -490px -630px;
+}
+.badge-70.SUR {
+  background-position: -560px -630px;
+}
+.badge-70.SWE {
+  background-position: -630px -630px;
+}
+.badge-70.SWZ {
+  background-position: -700px 0;
+}
+.badge-70.TAN {
+  background-position: -700px -70px;
+}
+.badge-70.TCI {
+  background-position: -700px -140px;
+}
+.badge-70.THA {
+  background-position: -700px -210px;
+}
+.badge-70.TUR {
+  background-position: -700px -280px;
+}
+.badge-70.UAE {
+  background-position: -700px -350px;
+}
+.badge-70.UGA {
+  background-position: -700px -420px;
+}
+.badge-70.VAN {
+  background-position: -700px -490px;
+}
+.badge-70.WI {
+  background-position: -700px -560px;
+}
+.badge-70.WIw {
+  background-position: -700px -630px;
+}
+.badge-70.WXI {
+  background-position: 0 -700px;
+}
+.badge-70.ZAM {
+  background-position: -70px -700px;
+}
+.badge-70.ZIM {
+  background-position: -140px -700px;
+}
+.badge-70.default {
+  background-position: -210px -700px;
+}
+
+.team-list__name {
+  z-index: 10;
+  -webkit-transform: translateZ(0);
+  padding: 0.8rem 0;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.team-list__btn {
+  z-index: 10;
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+.team-list__btn.t-AUS {
+  border: none;
+  color: #fff;
+  background-color: #cba435;
+}
+.team-list__btn.t-BAN {
+  border: none;
+  color: #fff;
+  background-color: #006a64;
+}
+.team-list__btn.t-ENG {
+  border: none;
+  color: #fff;
+  background-color: #2a4281;
+}
+.team-list__btn.t-IND {
+  border: none;
+  color: #fff;
+  background-color: #5093f6;
+}
+.team-list__btn.t-NZ {
+  border: none;
+  color: #fff;
+  background-color: #515151;
+}
+.team-list__btn.t-PAK {
+  border: none;
+  color: #fff;
+  background-color: #186214;
+}
+.team-list__btn.t-SA {
+  border: none;
+  color: #fff;
+  background-color: #2f5b29;
+}
+.team-list__btn.t-SL {
+  border: none;
+  color: #fff;
+  background-color: #31c9fc;
+}
+.team-list__btn.t-AFG {
+  border: none;
+  color: #fff;
+  background-color: #0072c4;
+}
+.team-list__btn.t-WI {
+  border: none;
+  color: #fff;
+  background-color: #4f0627;
+}
+.team-list__btn.t-IRE {
+  border: none;
+  color: #fff;
+  background-color: #335717;
+}
+.team-list__btn.t-ZIM {
+  background-color: #8c0e17;
+}
+.team-list__btn.t-AUSw,
+.team-list__btn.t-ENGw,
+.team-list__btn.t-INDw,
+.team-list__btn.t-NZw,
+.team-list__btn.t-PAKw,
+.team-list__btn.t-SAw,
+.team-list__btn.t-SLw,
+.team-list__btn.t-WIw,
+.team-list__btn.t-ZIM {
+  border: none;
+  color: #fff;
+}
+
+.team-list__gradient {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.team-list__gradient.t-AUS {
+  background: linear-gradient(0deg, #fbcd2f, #fbcd2f 75%, hsla(0, 0%, 100%, 0));
+}
+.team-list__gradient.t-BAN {
+  background: linear-gradient(0deg, #009f94, #009f94 75%, hsla(0, 0%, 100%, 0));
+}
+.team-list__gradient.t-ENG {
+  background: linear-gradient(0deg, #00175e, #00175e 75%, hsla(0, 0%, 100%, 0));
+}
+.team-list__gradient.t-IND {
+  background: linear-gradient(0deg, #4483e0, #4483e0 75%, hsla(0, 0%, 100%, 0));
+}
+.team-list__gradient.t-NZ {
+  background: linear-gradient(0deg, #231f20, #231f20 75%, hsla(0, 0%, 100%, 0));
+}
+.team-list__gradient.t-PAK {
+  background: linear-gradient(0deg, #004a0f, #004a0f 75%, hsla(0, 0%, 100%, 0));
+}
+.team-list__gradient.t-SA {
+  background: linear-gradient(0deg, #468f3e, #468f3e 75%, hsla(0, 0%, 100%, 0));
+}
+.team-list__gradient.t-SL {
+  background: linear-gradient(0deg, #00acd7, #00acd7 75%, hsla(0, 0%, 100%, 0));
+}
+.team-list__gradient.t-AFG {
+  background: linear-gradient(0deg, #2e8ffd, #2e8ffd 75%, hsla(0, 0%, 100%, 0));
+}
+.team-list__gradient.t-WI {
+  background: linear-gradient(0deg, #7e1041, #7e1041 75%, hsla(0, 0%, 100%, 0));
+}
+.team-list__gradient.t-IRE {
+  background: linear-gradient(0deg, #42701e, #42701e 75%, hsla(0, 0%, 100%, 0));
+}
+.team-list__gradient.t-ZIM {
+  background: linear-gradient(0deg, #c41019, #c41019 75%, hsla(0, 0%, 100%, 0));
+}
+/* .team-list__gradient.t-AUSw,
+.team-list__gradient.t-ENGw,
+.team-list__gradient.t-INDw,
+.team-list__gradient.t-NZw,
+.team-list__gradient.t-PAKw,
+.team-list__gradient.t-SAw,
+.team-list__gradient.t-SLw,
+.team-list__gradient.t-WIw {
+  background: linear-gradient(0deg, , 75%, hsla(0, 0%, 100%, 0));
+} */

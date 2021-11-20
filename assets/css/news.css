@@ -1,0 +1,21 @@
+.news-image {
+  padding: 0;
+  transition: transform 0.3s ease;
+}
+.news-image:hover {
+  transform: scale(1.01);
+}
+.news-text {
+  background-color: #3763eb;
+  display: flex;
+  align-items: center;
+}
+.news-text p,
+.news-text h5 {
+  color: white;
+  padding: 5px;
+}
+
+h5:hover {
+  text-decoration: underline;
+}

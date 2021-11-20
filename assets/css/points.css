@@ -1,0 +1,467 @@
+/* Google fonts - Open Sans */
+/* @import url(https://fonts.googleapis.com/css?family=Open + Sans:400, 700); */
+/* colors */
+/* body */
+
+/* links */
+.nfl a,
+.mlb a,
+.nhl a,
+.pga a {
+  text-decoration: none;
+  transition: color 0.2s ease-out;
+}
+/* 
+.england a {
+  color: #7fccda;
+}
+
+.england a:hover {
+  color: #00ddff;
+}
+
+.india a {
+  color: #7493d6;
+}
+
+.india a:hover {
+  color: #1b397a;
+}
+
+.sri-lanka a {
+  color: #3c5fa8;
+}
+
+.sri-lanka a:hover {
+  color: #083699;
+}
+
+.pakistan a {
+  color: #77aa60;
+}
+
+.pakistan a:hover {
+  color: #46802b;
+}
+
+.south-africa a {
+  color: #90e967;
+}
+
+.south-afric a:hover {
+  color: #6aff25;
+}
+
+.bangladesh  a {
+  color: #49812f;
+}
+
+.bangladesh a:hover {
+  color: #2b5319;
+}
+
+.new-zealand a {
+  color: #a19d9d;
+}
+
+.new-zealand a:hover {
+  color: #757575b3;
+}
+
+.australia a {
+  color: #fceb00b3;
+}
+
+.australia a:hover {
+  color: #ffee00;
+}
+
+.afghanistan a {
+  color: #6f98e6;
+}
+
+.afghanistan a:hover {
+  color: #3f7cd6;
+}
+
+.west-indies a {
+  color: #e94b4b;
+}
+
+.west-indies a:hover {
+  color: #cc1010;
+}
+
+
+
+.england  {
+  border-left: 3px solid #7fccda;
+}
+
+.england:hover {
+  border-left: 3px solid #00ddff;
+}
+
+.india {
+  border-left: 3px solid #7493d6;
+}
+
+.india:hover {
+  border-left: 3px solid #1b397a;
+}
+
+.sri-lanka {
+  border-left: 3px solid #3c5fa8;
+}
+
+.sri-lanka:hover {
+  border-left: 3px solid #083699;
+}
+
+.pakistan {
+  border-left: 3px solid #77aa60;
+}
+
+.pakistan:hover {
+  border-left: 3px solid #46802b;
+}
+
+.south-africa {
+  border-left: 3px solid #90e967;
+}
+
+.south-afric:hover {
+  border-left: 3px solid #6aff25;
+}
+
+.bangladesh {
+  border-left: 3px solid #49812f;
+}
+
+.bangladesh:hover {
+  border-left: 3px solid #2b5319;
+}
+
+.new-zealand {
+  border-left: 3px solid #a19d9d;
+}
+
+.new-zealand:hover {
+  border-left: 3px solid #757575b3;
+}
+
+.australia {
+  border-left: 3px solid #fceb00b3;
+}
+
+.australia:hover {
+  border-left: 3px solid #ffee00;
+}
+
+.afghanistan {
+  border-left: 3px solid #6f98e6;
+}
+
+.afghanistan:hover {
+  border-left: 3px solid #3f7cd6;
+}
+
+.west-indies {
+  border-left: 3px solid #e94b4b;
+}
+
+.west-indies:hover {
+  border-left: 3px solid #cc1010;
+} */
+
+/* wrapper */
+.wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto 100px auto;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.9);
+  overflow: hidden;
+  position: relative;
+}
+
+/* lists */
+.point-row ul {
+  margin: 0;
+  padding: 0;
+}
+
+.point-row ul li {
+  margin: 0;
+  font-size: 16px;
+  font-weight: normal;
+  list-style: none;
+  display: inline-block;
+  width: 16%;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+  .point-row ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .point-row ul li {
+    font-size: 13px;
+  }
+}
+
+.title ul li {
+  padding: 15px 13px;
+}
+
+.point-row ul li {
+  padding: 5px 10px;
+}
+
+/* rows */
+.point-row {
+  padding: 10px 0;
+  /* height: 60px; */
+  font-size: 0;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s ease-out;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.point-row:hover {
+  background-color: rgba(26, 26, 26, 0.9);
+}
+
+.title {
+  padding: 20px 0 5px 0;
+  height: 65px;
+  font-size: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left: 3px solid rgba(255, 255, 255, 0.1);
+}
+
+.title:hover {
+  height: 65px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left: 3px solid rgba(255, 255, 255, 0.1);
+}
+
+@media only screen and (max-width: 767px) {
+  .title-hide {
+    display: none;
+  }
+}
+
+.fadeIn {
+  padding: 20px 0;
+  font-size: 0;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.fadeIn:hover {
+  background-color: rgba(26, 26, 26, 0.9);
+}
+
+/* row two - fadeOut */
+.row-fadeOut-wrapper {
+  font-size: 0;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.2s ease-out;
+  -webkit-animation: fadeOut 0.4s ease-out 8s 1 alternate;
+  animation: fadeOut 0.4s ease-out 8s 1 alternate;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  opacity: 1;
+  height: 65px;
+}
+
+.row-fadeOut-wrapper:hover {
+  height: 100px;
+}
+
+/* update content */
+.update-row {
+  -webkit-animation: update 0.5s ease-out 12s 1 alternate;
+  animation: update 0.5s ease-out 12s 1 alternate;
+}
+
+.update1 {
+  position: absolute;
+  top: 25px;
+  display: inline-block;
+  opacity: 1;
+  -webkit-animation: update1 1s ease-out 12s 1 alternate;
+  animation: update1 1s ease-out 12s 1 alternate;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.update2 {
+  position: absolute;
+  top: 25px;
+  display: inline-block;
+  opacity: 0;
+  -webkit-animation: update2 4s ease-out 13s 1 alternate;
+  animation: update2 4s ease-out 13s 1 alternate;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* more content */
+ul.more-content > li {
+  position: relative;
+  top: 22px;
+  font-size: 13px;
+  margin: 0;
+  padding: 10px 13px;
+  display: block;
+  height: 50px;
+  width: 100%;
+  color: rgba(128, 128, 128, 0.9);
+}
+@media only screen and (max-width: 767px) {
+  ul.more-content > li {
+    font-size: 11px;
+  }
+}
+
+/* small content */
+.small {
+  color: rgba(102, 102, 102, 0.9);
+  font-size: 10px;
+  padding: 0 10px;
+  margin: 0;
+}
+@media only screen and (max-width: 767px) {
+  .small {
+    display: none;
+  }
+}
+
+/* keyframe animations */
+@-webkit-keyframes fadeIn {
+  from {
+    background: rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    padding: 0;
+  }
+  to {
+    background: rgba(51, 51, 51, 0.1);
+    opacity: 1;
+    padding: 0 0 65px 0;
+  }
+}
+@keyframes fadeIn {
+  from {
+    background: rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    padding: 0;
+  }
+  to {
+    background: rgba(51, 51, 51, 0.1);
+    opacity: 1;
+    padding: 0 0 65px 0;
+  }
+}
+@-webkit-keyframes fadeOut {
+  from {
+    background: rgba(51, 51, 51, 0.1);
+    opacity: 1;
+    height: 65px;
+  }
+  to {
+    background: rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    height: 0;
+  }
+}
+@keyframes fadeOut {
+  from {
+    background: rgba(51, 51, 51, 0.1);
+    opacity: 1;
+    height: 65px;
+  }
+  to {
+    background: rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    height: 0;
+  }
+}
+@-webkit-keyframes update {
+  0% {
+    background: rgba(51, 51, 51, 0.1);
+  }
+  50% {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  100% {
+    background: rgba(51, 51, 51, 0.1);
+  }
+}
+@keyframes update {
+  0% {
+    background: rgba(51, 51, 51, 0.1);
+  }
+  50% {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  100% {
+    background: rgba(51, 51, 51, 0.1);
+  }
+}
+@-webkit-keyframes update1 {
+  0% {
+    opacity: 0;
+  }
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes update1 {
+  0% {
+    opacity: 0;
+  }
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes update2 {
+  0% {
+    opacity: 0;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  20% {
+    opacity: 1;
+    color: #52d29a;
+  }
+  100% {
+    opacity: 1;
+    color: rgba(255, 255, 255, 0.9);
+  }
+}
+@keyframes update2 {
+  0% {
+    opacity: 0;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  20% {
+    opacity: 1;
+    color: #52d29a;
+  }
+  100% {
+    opacity: 1;
+    color: rgba(255, 255, 255, 0.9);
+  }
+}
